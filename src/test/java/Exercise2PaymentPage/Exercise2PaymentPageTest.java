@@ -13,8 +13,8 @@ public class Exercise2PaymentPageTest {
 
 		exercise2PaymentPage.load();
 		exercise2PaymentPage.SetCustomerInfoFields("uash@gmail.com", "Uash Ash", "7000 Estela");
-		exercise2PaymentPage.setCardType("Visa");
-		exercise2PaymentPage.SetPaymentFields("2345345645675678", "Uash Ash", "213");
+		//exercise2PaymentPage.setCardType("Visa");
+		exercise2PaymentPage.SetPaymentFields("Visa", "2345345645675678", "Uash Ash", "213");
 		exercise2PaymentPage.submit();
 		exercise2PaymentPage.assertTitle();
 		exercise2PaymentPage.close();
